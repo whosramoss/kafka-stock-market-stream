@@ -165,6 +165,3 @@ The project includes `KafkaConsumer.ipynb`, which consumes messages from the sam
 
 3. **Run the consumer:** Execute the cells to create the consumer and iterate over messages from `stock-market-index`. Messages are deserialized from JSON automatically.
 
-4. **Optional — persist to S3:** If you use the S3 cells, set your AWS credentials (or rely on `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` in the environment) and replace `<YOUR_BUCKET_NAME>` with your S3 bucket. The notebook can write each consumed message as a JSON file under that bucket (e.g. `stock_market_0.json`, `stock_market_1.json`, …) for later use with Glue Crawler and Athena.
-
-**Suggested order:** Start the producer (or leave it streaming), then run the consumer in another notebook session or machine so both use the same broker and topic.
